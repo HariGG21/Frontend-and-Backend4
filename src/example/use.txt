@@ -1,0 +1,5 @@
+Hello, this is a use text file for testing email attachments using Nodemailer.
+
+Im Hari we have good knowledge in all stacks.
+
+Thank you..........!
