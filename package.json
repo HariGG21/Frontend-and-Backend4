@@ -1,39 +1,52 @@
 {
-  "name": "backends",
+  "name": "my-material-ui-app",
   "version": "1.0.0",
-  "main": "index.ts",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "test": "jest"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}' --config eslint.config.mjs",
+  "lint:fix": "eslint --fix ./src --config eslint.config.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/cors": "^2.8.17",
-    "@types/jest": "^29.5.14",
-    "@types/jsonwebtoken": "^9.0.9",
-    "@types/mongoose": "^5.11.96",
-    "@types/multer": "^1.4.12",
-    "@types/nodemailer": "^6.4.17",
-    "jest": "^29.7.0",
-    "nodemon": "^1.19.4",
-    "supertest": "^7.1.0",
-    "ts-jest": "^29.3.1",
-    "typescript": "^5.8.3"
-  },
   "dependencies": {
-    "@types/express": "^5.0.1",
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.13.2",
-    "multer": "^1.4.5-lts.2",
-    "nodemailer": "^6.10.0"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@reduxjs/toolkit": "^2.6.1",
+    "axios": "^1.8.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.0.0",
+    "react-scripts": "^5.0.1",
+    "typescript-eslint": "^8.29.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

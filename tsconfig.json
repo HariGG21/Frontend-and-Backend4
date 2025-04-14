@@ -1,20 +1,28 @@
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "typeRoots": ["./node_modules/@types", "./types"],
-    "isolatedModules": true  // Add this to avoid issues with isolated modules in Jest.
-  },
-  "include": [
-    "src/**/*",
-    "tests/**/*"
-  ],
-  "exclude": ["node_modules"]
-}
+    "compilerOptions": {
+      "target": "es5", // Or "ES6" depending on your target browsers
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "esnext", // Crucial for frontend (ES Modules)
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true, // Frontend doesn't need to emit .js files, handled by build tools
+      "jsx": "react-jsx" // Important for React JSX syntax
+    },
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
